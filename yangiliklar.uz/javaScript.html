@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style/style.css">
+        <script>
+            function changeText(){
+                d.getElementById('matn').innerText = 'Bu o\'zgartirilgan matn';
+            }
+            function btnClick() {
+                var a = document.getElementById('a').value;
+                var b = document.getElementById('b').value;
+                a = parseInt(a);
+                b = parseInt(b);
+    
+                document.getElementById('natija').innerText = a*b
+                                
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h2>yangiliklar.uz</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <a href="../index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./about.html">
+                    <li>About</li>
+                </a>
+                <a href="./javaScript.html">
+                    <li>javaScript</li>
+                </a>
+                <li style="border-right-width: 2px;">Contact</li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Bu sahifada javaScript kodlarini o'rganamiz</h2>
+            <label for="a">a=</label>
+            <input type="number" id="a"><br>
+            <label for="b">b=</label>
+            <input type="number" id="b"><br>
+            <button onclick="btnClick()">Ko'paytirish</button>
+            <span id="natija"></span>
+
+        </main>
+
+        <footer>
+            <h3>Bu footer qismi</h3>
+        </footer>
+    </body>
+</html>
